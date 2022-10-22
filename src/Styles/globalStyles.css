@@ -1,0 +1,55 @@
+*{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --color:#922719;
+    --bgcolor: #fdfbfb;
+    --hovercolor:#2d9acc;
+}
+body{
+    background-color: #d1d8d8;
+    
+  
+}
+.spin-container{
+    margin: 45vh 0 45vh 45vw;
+}
+
+.spinner {
+    border: solid 6px black;
+    border-radius: 55%;
+    height: 6vw;
+    width: 8vw;
+    transform: translate3d(-50%,-50%,0);
+    animation: spin 1.5s linear infinite;
+    animation-play-state: inherit;
+    will-change: tarnsform;
+
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@media (max-width:500px) {
+    
+    .spinner {
+    
+        height: 15vw;
+        width: 15vw;
+       
+    
+    }
+}
+button:active{
+    opacity: 1;
+    color: blue;
+}

@@ -10,6 +10,10 @@ const foodStore=[
 "foodimgLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAU",
 "tag":"30 % off","caterogry":"non-veg","price":"₹120"},{"_id":4,"name":"chicken biryani",
 "foodimgLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAU",
+"tag":"30 % off","caterogry":"non-veg","price":"₹120"},{"_id":5,"name":"chicken biryani",
+"foodimgLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAU",
+"tag":"30 % off","caterogry":"non-veg","price":"₹120"},{"_id":6,"name":"chicken biryani",
+"foodimgLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDDsimOQJgRh3Y-P1Nr0a43jwlR93hFzl1w&usqp=CAU",
 "tag":"30 % off","caterogry":"non-veg","price":"₹120"}]
 
 },

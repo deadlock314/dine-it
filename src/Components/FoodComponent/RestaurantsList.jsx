@@ -1,29 +1,27 @@
 import React,{ useEffect,useState} from 'react';
-import FoodStruct from './FoodStruct';
+import RestaurantCard from './RestaurantsCard';
 import '../../Styles/FoodInfoStyles/foodStructStyles.css';
 import { useParams } from 'react-router';
-import {getFoodListData}  from '../../HelperFun/getFoodData';
 import Spinner from '../unitComponent/Spinner';
 import {  getStorage, setStorage } from '../../HelperFun/browserStorageFuns';
 import foodstore from '../../DummyData/dummyData';
 
-const Foods=()=> {
+const ResturantsList=()=> {
 
     const params=useParams();
 
-    const [FoodList,setFoodList]=useState([{}]);
+    const [RestaurantList,setRestaurantList]=useState([{}]);
     const [loading ,setLoading]=useState(true);
 
     useEffect(()=>
     {
         const FetchData=async()=>{
             if(getStorage("homeFoods"))
-                setFoodList(JSON.parse(getStorage("homeFoods")))
+                setRestaurantList(JSON.parse(getStorage("homeFoods")))
             else{
              const res= foodstore;
              
-             //await getFoodListData(`https://${FoodType}`)
-               setFoodList(res)
+               setRestaurantList(res)
                setStorage("homeFoods",JSON.stringify(res));
             }
         setLoading(false);
@@ -41,9 +39,9 @@ const Foods=()=> {
                 
                 <div className='Food-container'>
                     {
-                        FoodList.map((p)=>{
+                        RestaurantList.map((p)=>{
                             return(
-                                <FoodStruct props={p} key={p._id} />
+                                <RestaurantCard props={p} key={p._id} />
                             )
                         })
                     } 
@@ -54,4 +52,4 @@ const Foods=()=> {
      );
 }
 
-export default Foods;
+export default ResturantsList;

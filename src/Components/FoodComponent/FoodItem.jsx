@@ -12,7 +12,6 @@ function FoodItem({ props }) {
     return (
         <>
 
-
             <div className='card' id={`Food-struct`} key={props._id} >
                 <img className='Food-image' src={props.imgLink} name={props._id} alt={props.name} />
                 <div className='container'>

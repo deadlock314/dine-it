@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router';
-import FoodInfoStruct from './FoodInfoStruct';
+import FoodInfoStruct from '../FoodComponent/FoodInfoStruct';
 import '../../Styles/FoodInfoStyles/restaurantInfoStyles.css';
 // import { getStorage } from '../../HelperFun/browserStorageFuns';
 // import { getFoodInfoData } from '../../HelperFun/getFoodData';

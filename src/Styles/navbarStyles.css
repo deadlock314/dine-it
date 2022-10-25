@@ -21,7 +21,7 @@
     color: #fff;
     font-size:110%;
     cursor: pointer;
-    width: 7%;
+    width: 8%;
     height: 100%;
     padding: 1% 0 5px;
 
@@ -37,5 +37,5 @@
     all:unset;
 }
 .navbar div:hover{
-    border-bottom: 5px solid #d4853a;
+    border-bottom: 3px solid #d4853a;
 }

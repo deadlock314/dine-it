@@ -78,7 +78,17 @@
     width: auto;
     height: auto;
   }
-.form-div input{
+
+  .form-div2{
+    position: absolute;
+    top: 67%;
+    left: 44%;
+    color: #fff;
+    width: auto;
+    height: auto;
+  } 
+
+.form-div input , .form-div2 input{
   background: none;
   border-style: none;
   outline: none;
@@ -90,7 +100,7 @@
   border-bottom: 3px solid #e64971;
   padding: 10px;
 }
-.form-div input::placeholder{
+.form-div input::placeholder , .form-div2 input::placeholder{
   color: #fff;
   opacity: 0.9;
   font-size: 20px;

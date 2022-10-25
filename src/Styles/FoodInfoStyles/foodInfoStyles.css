@@ -1,0 +1,46 @@
+.food-info-main{
+    padding: 7vw 7vw;
+
+}
+
+.food-info-img-main-div{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.food-info-img-div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.food-info-img2{
+    width: 20.7vw;
+    height: 24vh;
+    border-radius: 2vw;
+    margin-bottom: 0.7vw;
+}
+.food-info-img1{
+    width: 49%;
+    height: 50vh;
+    border-radius: 2vw;
+}
+.food-info-cart-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-buy-button{
+
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    width: 6.5vw;
+    height: 2.5vw;
+    background-color:#e8640c ;
+    color: #fff;
+    margin:  0 12px;
+    font-weight: 500;
+    border-radius: 10%;
+}

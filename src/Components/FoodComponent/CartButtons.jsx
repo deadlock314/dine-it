@@ -3,12 +3,11 @@ import { useSelector ,useDispatch} from 'react-redux';
 import { useNavigate } from 'react-router';
 import { updateCartData, updatePrice } from '../../ReduxCode/Reducers';
 import { priceAdder } from '../../HelperFun/priceAdder';
+import '../../Styles/FoodInfoStyles/foodInfoStyles.css';
 
 const CartButtons=({prop})=> {
 
     const redirect=useNavigate();
-
-    console.log(prop);
 
     const cartData=useSelector(state=> state.cartData);
 
@@ -45,9 +44,9 @@ redirect(`/cart`);
     }
 
     return (  
-        <div id='pinfo-btn'>
-        <button className='FoodInfo-button' name={prop.FoodId} onClick={BuyNowHandlerWithSingleP} >Order Now</button>
-        <button className='FoodInfo-button' name={prop.FoodId} onClick={AddToCartHandler}>Add to Cart</button>
+        <div>
+        <button className='cart-buy-button' name={prop.FoodId} onClick={BuyNowHandlerWithSingleP} >Order Now</button>
+        <button className='cart-buy-button' name={prop.FoodId} onClick={AddToCartHandler}>Add to Cart</button>
         </div>
     );
 }

@@ -15,7 +15,7 @@ const CartFoodStruct=(prop)=> {
         <div >
    
             <div className="cart-Food-struct" key={prop.props._id} onClick={clickFoodStructHandler}>
-               <img id='cart-Food-image' src={prop.props.foodimgLink} name={prop.props.FoodId} alt={prop.props.name}/>
+               <img id='cart-Food-image' src={prop.props.foodimgLink[0]} name={prop.props.FoodId} alt={prop.props.name}/>
                <div id='cart-container'>
                <p id='cart-Food-des'>   {prop.props.name}</p>
                <p id="cart-Food-price"> {prop.props.price}</p>

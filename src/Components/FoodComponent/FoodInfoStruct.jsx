@@ -4,13 +4,13 @@ import { useSelector } from 'react-redux';
 import Spinner from '../unitComponent/Spinner';
 import CartButtons from './CartButtons';
 import foodStore from '../../DummyData/dummyData';
-import { redirect } from 'react-router-dom';
+import {useNavigate } from 'react-router';
+
 
 const PropsInfoStruct = () => {
 
    const FoodInfoProps = foodStore[0];
-   console.log(foodStore[0])
-
+   const redirect=useNavigate();
 
 
    return (
@@ -20,9 +20,9 @@ const PropsInfoStruct = () => {
 
                   return (
                      
-                        <div className='food-card' key={props._id}  onClick={() => { redirect(`/fooditem/${prop._id}`) }}>
-                           <img className='dish-img' src={props.foodimgLink} name={props._id} alt={props.name} />
-                           <div className='container2'>
+                        <div className='food-card' key={props._id} >
+                           <img className='dish-img' src={props.foodimgLink[0]}  onClick={() => redirect(`/fooditem/${props._id}`,{state:props})} name={props._id} alt={props.name} />
+                           <div className='container2' onClick={() => { redirect(`/fooditem/${props._id}`,{state:props}) }}>
                               <p className='dish-name'>{props.name}</p>
                               <p className='dish-price'> {props.price}</p>
                               <p className='dish-price'> {props.caterogry}</p>

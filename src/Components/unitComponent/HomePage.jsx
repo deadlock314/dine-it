@@ -1,12 +1,13 @@
 import React from 'react';
 import '../../Styles/homePageStyles.css';
 import  'font-awesome/css/font-awesome.min.css';
+import ResturantsList from '../RestaurantComponent/RestaurantsList';
 
 
-const NavBar=()=>{
+const HomePage=()=>{
   
     return(
-    <header>
+    <>
         <div id="abc">
             <div className='container'>
                 <h1 className='head-main'>DINE</h1>
@@ -16,10 +17,15 @@ const NavBar=()=>{
                         <input placeholder='Search Restraunts' />
                         <button className='btn search'>SEARCH</button>
                 </div>
+                <div className='form-div2'>
+                        <input placeholder='Search Your fav foodss' />
+                        <button className='btn search'>SEARCH</button>
+                </div>
             </div>
         </div>
-    </header>
+        <ResturantsList/>
+    </>
         )
 }
  
-export default NavBar;
+export default HomePage;

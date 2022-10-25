@@ -23,7 +23,10 @@ const HomePage=()=>{
                 </div>
             </div>
         </div>
-        <ResturantsList/>
+       <div className="homepage-reslist">
+        <p className="homepage-res-title">Famous Restaurants Near you..</p>  
+       </div>
+       <ResturantsList/>
     </>
         )
 }

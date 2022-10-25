@@ -37,7 +37,8 @@ const ResturantsList=()=> {
         {
             loading ? <Spinner/> :
                 
-                <div className='Food-container'>
+                <div>
+                    <div className='reslist-container'>
                     {
                         RestaurantList.map((p)=>{
                             return(
@@ -45,6 +46,7 @@ const ResturantsList=()=> {
                             )
                         })
                     } 
+                </div>
                 </div>
            
         }

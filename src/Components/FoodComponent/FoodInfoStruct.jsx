@@ -16,25 +16,30 @@ const PropsInfoStruct = () => {
    return (
      
         
-               FoodInfoProps.foods.map((props) => {
+               <div className="food-list-container">
+                  {
+                              FoodInfoProps.foods.map((props) => {
 
-                  return (
-                     
-                        <div className='food-card' key={props._id} >
-                           <img className='dish-img' src={props.foodimgLink[0]}  onClick={() => redirect(`/fooditem/${props._id}`,{state:props})} name={props._id} alt={props.name} />
-                           <div className='container2' onClick={() => { redirect(`/fooditem/${props._id}`,{state:props}) }}>
-                              <p className='dish-name'>{props.name}</p>
-                              <p className='dish-price'> {props.price}</p>
-                              <p className='dish-price'> {props.caterogry}</p>
-                              <p className='dish-price'> {props.tag}</p>
-                           </div>
-                           <CartButtons prop={props} />
-
-                        </div>
-                   
-                  )
-
-               })
+                                 return (
+                                    
+                                       <div className='food-card' key={props._id} >
+                                          <img className='dish-img' src={props.foodimgLink[0]}  onClick={() => redirect(`/fooditem/${props._id}`,{state:props})} name={props._id} alt={props.name} />
+                                          <div className='container2' onClick={() => { redirect(`/fooditem/${props._id}`,{state:props}) }}>
+                                             <p className='dish-name'>{props.name}</p>
+                                             <p className='dish-price'> {props.price}</p>
+                                             <p className='dish-price'> {props.caterogry}</p>
+                                             <p className='dish-price'> {props.tag}</p>
+                                          </div>
+                                          <CartButtons prop={props} />
+                                 
+                                       </div>
+                                  
+                                 )
+                                 
+                                 })
+                  }
+         
+               </div>
           
 
    );

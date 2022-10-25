@@ -4,7 +4,6 @@ import NavBar from './Components/unitComponent/HomePage';
 import LogIn from './Components/authComponent/LogIn';
 import SignUp from './Components/authComponent/SignUp'
 import RestaurantInfo from './Components/RestaurantComponent/RestauratInfo';
-import ResturantsList from './Components/RestaurantComponent/RestaurantsList';
 import Cart from './Components/CartComponents/Cart';
 import UserProfile from "./Components/ProfileComponent/UserProfile";
 import Footer from './Components/unitComponent/Footer';
@@ -14,6 +13,7 @@ import { setStorage } from './HelperFun/browserStorageFuns';
 import BuyingPage from './Components/BuyingPageComponent/BuyingPage';
 import Navbar from './Components/unitComponent/Navbar';
 import FoodItem from './Components/FoodComponent/FoodItem';
+import ResListWithSearch from './Components/RestaurantComponent/ResListWithSearch';
 
 
 
@@ -28,7 +28,7 @@ const App=()=> {
 <Routes>
 <Route path='/' element={<NavBar/>}/>
 
- <Route path='/restaurant' element={<ResturantsList/>}/> 
+ <Route path='/restaurant' element={<ResListWithSearch/>}/> 
  <Route path='FoodInfo/:FoodId' element={<RestaurantInfo/>}/>
 
  <Route path='fooditem/:food_id' element={<FoodItem/>}/>

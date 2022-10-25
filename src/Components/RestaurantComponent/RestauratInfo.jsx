@@ -33,7 +33,7 @@ const RestaurantInfo = () => {
    return (
       <>
 
-         <div key={FoodInfoProps._id} >
+         <div >
 
             <img className='hotel-bg-img' src={hotelimg} alt={FoodInfoProps.name} />
 
@@ -49,6 +49,7 @@ const RestaurantInfo = () => {
 
          </div>
          <div className="food-data-list">
+            <p className="food-list-title">Dishes Avaliable Here..</p>
             <FoodInfoStruct />
          </div>
          

@@ -8,7 +8,7 @@ const CartFoodStruct=(prop)=> {
     
     const redirect=useNavigate();
 
-    const clickFoodStructHandler=e=>  redirect(`/FoodInfo/${getStorage("FoodType")}/${prop.props.FoodId}`)
+    const clickFoodStructHandler=e=>  redirect(`/fooditem/${prop.props._id}`,{state:prop.props})
 
     return ( 
        

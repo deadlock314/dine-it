@@ -6,6 +6,9 @@ import '../../Styles/FormStyles.css';
 import Spinner from '../unitComponent/Spinner';
 import {changeUserAuth,setUserData} from '../../ReduxCode/Reducers';
 import urls from '../../config';
+import formimg from '../assets/pexels-ella-olsson-1640777.jpg';
+
+
 
  const LogIn=()=> {
 
@@ -62,7 +65,9 @@ import urls from '../../config';
             <>
             {
                 (loading)?<Spinner/>:
-                <div className='auth-wrapper'>
+                <div className="img-form-main">
+                    <img className="img-form" src={formimg} />
+                    <div className='auth-wrapper'>
                  <form className="form">
                  <label htmlFor="email" >Email : </label>
                 <input type="email" name="email" id='email' value={user.email} onChange={changeHandler}/>  
@@ -71,10 +76,11 @@ import urls from '../../config';
                 <Link id='fpass' to='/forgotpassword'>Forgot your password</Link> 
                 <button type='submit' onClick={clickHandler}>LogIn</button>
                 <p id="warn-message"> {loggedInMes}</p>
-                <p>Didn't have any account ?<Link className='auth-link' to='/signup'> Sign Up</Link></p>
-                <p>Right Now and enjoy your shoping </p>
+                <p className="form-bottom-text" >Didn't have any account ?<Link className='auth-link' to='/signup'> Sign Up</Link></p>
+                <p className="form-bottom-text">Right Now and enjoy your shoping </p>
             </form>
             </div>
+                </div>
             }
             </>
            

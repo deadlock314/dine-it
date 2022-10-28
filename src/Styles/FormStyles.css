@@ -1,11 +1,23 @@
+.img-form-main{
+    display: flex;
+    margin: 0vh 15vw 20vh 15vw; 
+    padding-top: 20vh;
+    height: 85vh;
+   
+}
+
+.img-form{
+    width: 40%;
+    height: 100%; 
+    border-radius: 15px 0 0 15px;
+}
+
 .auth-wrapper{
     display: flex;
     align-self: center;
     justify-content: center;
-    margin: 0vh 0 20vh 0;
-    padding-top: 20vh;
-
-    
+    width: 60%; 
+    height: 100%;
 }
 .wrapper2{
     display: flex;
@@ -24,21 +36,22 @@
     
 }
 .form{
-    display: grid;
-    padding: 20px;
-    width: 400px;
-    height: 360px; 
+    display: flex;
+    flex-direction: column;
     background-color:#fff;
-    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0 15px 15px 0;
 }
 
 .form2{
     display: grid;
     padding: 20px;
-    width: 420px;
-    height: 520px; 
+ 
     background-color:#fff;
     border-radius: 15px;
+    border-radius: 15px 0 0 15px;
 }
 
 .form button , .form2 button , #order{
@@ -48,19 +61,21 @@
     text-align: center;
     background-color: #ff6701;
     width: 245px;
-    height: 28px;
-    margin: 3px 0 0 50px;
+    height: 30px;
     border: 1px solid #ff6701;
     border-radius: 15px;
     color:#fff;
     font-size: 1.2rem;
+    margin: 20px 0;
     
 }
 .form label , .form2 label{
     display: inline-block;
     all: unset;
     font-size: 1.2rem;
-    padding: 6px 0 0 40px;
+    margin: 0 0 15px 0;
+    align-self: flex-start;
+    margin-left: 30%;
     
     
 }
@@ -69,13 +84,14 @@
     display: inline-block;
     width: 245px;
     height: 28px;
-    margin: 3px 0 0 50px;
     border:  solid 2px black;
     border-radius: 10px;
+    margin: 0 0 20px 0;
 }
 #fpass{
     font-size: 1.05rem;
-    padding-left: 50px;
+    align-self: flex-start;
+    margin-left: 30%;
     color: blue;
 }
 .auth-link{
@@ -87,10 +103,10 @@
     font-size: 1.1rem;
     color: rgb(241, 10, 10);
 }
-
-.form p{
-    padding-left: 50px;
+.form-bottom-text{
+    margin-top: 20px;
 }
+
 
 #auth-otp-label{
 margin: 0 0 0px 20px;

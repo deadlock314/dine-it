@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import '../../Styles/FormStyles.css';
 import urls from '../../config';
+import formimg from '../assets/pexels-ella-olsson-1640777.jpg';
 
 function SignUp() {
     const redirect = useNavigate();
@@ -35,6 +36,9 @@ function SignUp() {
     }
 
     return (
+
+        <div className="img-form-main">
+        <img className="img-form" src={formimg} />
         <div className='auth-wrapper'>
             <form className="form">
                 <label htmlFor="name" >Name : </label>
@@ -47,6 +51,7 @@ function SignUp() {
                 <p id="warn-message"> {signedUpMes}</p>
                 <p>Already have an account? <Link className='auth-link' to='/login'> LogIn</Link> </p>
             </form>
+        </div>
         </div>
 
     );

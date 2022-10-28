@@ -7,12 +7,13 @@
   #abc{
     content: ' ';
     /* display: block; */
-    width: 100%;
-    height: 100vh;
+    width: 89vw;
+    height: 70vh;
     opacity: 3;
     background-image: url('../Components/assets/462927.jpg');
     background-size: cover;
     position: relative;
+    margin : 0 5vw;
   } 
 
    #abc::before{
@@ -72,22 +73,14 @@
   }
   .form-div{
     position: absolute;
-    top: 67%;
+    top: 80%;
     left: 14%;
     color: #fff;
     width: auto;
     height: auto;
   }
 
-  .form-div2{
-    position: absolute;
-    top: 67%;
-    left: 44%;
-    color: #fff;
-    width: auto;
-    height: auto;
-  } 
-
+  
 .form-div input , .form-div2 input{
   background: none;
   border-style: none;
@@ -123,6 +116,7 @@
   flex-direction: column;
   width: 60%;
 }
+
 /* ===== Scrollbar CSS ===== */
 
   /* Chrome, Edge, and Safari */
@@ -149,7 +143,7 @@
   }
   .homepage-reslist{
      background-color: rgb(221, 227, 233);
-     margin : 0 7vw;
-     padding-top:3vw;
+     margin : 0 5vw;
+     padding-top:2vw;
   }
  

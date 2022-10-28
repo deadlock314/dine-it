@@ -14,11 +14,7 @@ const HomePage=()=>{
                 <h1 className='head-main'>IT</h1>
                 <p className='para-main'>Delicious Food for Every Mood.</p>
                 <div className='form-div'>
-                        <input placeholder='Search Restraunts' />
-                        <button className='btn search'>SEARCH</button>
-                </div>
-                <div className='form-div2'>
-                        <input placeholder='Search Your fav foodss' />
+                        <input placeholder='Search Restraunts foods' />
                         <button className='btn search'>SEARCH</button>
                 </div>
             </div>

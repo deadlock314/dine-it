@@ -16,7 +16,7 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 7vw;
+    margin: 0 5vw;
     background-color: rgb(221, 227, 233);
     padding-top: 50px;
 }
